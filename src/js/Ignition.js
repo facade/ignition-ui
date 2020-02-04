@@ -63,6 +63,6 @@ export default class Ignition {
                     },
                 });
             },
-        }).$mount('#app');
+        }).$mount('#__ignition__container');
     }
 }
