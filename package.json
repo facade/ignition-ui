@@ -1,5 +1,5 @@
 {
-    "name": "ignition-ui",
+    "name": "@flareapp/ignition-ui",
     "main": "compiled/ignition.js",
     "private": true,
     "scripts": {
