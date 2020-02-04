@@ -1,4 +1,6 @@
 {
+    "name": "ignition-ui",
+    "main": "compiled/ignition.js",
     "private": true,
     "scripts": {
         "dev": "webpack --mode development --watch",
