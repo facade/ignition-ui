@@ -91,7 +91,7 @@ export default {
                         Accept: 'application/json',
                     },
                     body: JSON.stringify({
-                        report: JSON.stringify(this.report),
+                        report: this.report,
                         tabs: selectedTabs,
                         lineSelection: window.location.hash,
                     }),
