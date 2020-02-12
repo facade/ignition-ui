@@ -1,7 +1,17 @@
 {
-    "name": "@flareapp/ignition-ui",
+    "name": "@facadecompany/ignition-ui",
     "main": "compiled/ignition.js",
-    "private": true,
+    "version": "0.0.1",
+    "description": "A beautiful error page for inspecting your JavaScript errors more closely",
+    "homepage": "https://flareapp.io/ignition",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/facade/ignition-ui.git"
+    },
+    "bugs": {
+        "url": "https://github.com/facade/ignition-ui/issues"
+    },
     "scripts": {
         "dev": "webpack --mode development --watch",
         "build": "NODE_ENV=production webpack --mode production",
