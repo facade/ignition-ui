@@ -32,6 +32,7 @@
                             </svg>
                         </a>
                         <FilePath
+                            v-if="report.application_path"
                             pathClass="font-normal"
                             :file="report.application_path + config.directorySeparator"
                             :relative="false"

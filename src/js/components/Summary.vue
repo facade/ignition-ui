@@ -34,7 +34,6 @@
 </template>
 
 <script>
-import FilePath from './Shared/FilePath.vue';
 import ErrorCard from './Shared/ErrorCard';
 import SolutionCard from './Solutions/SolutionCard';
 
@@ -42,7 +41,6 @@ export default {
     components: {
         SolutionCard,
         ErrorCard,
-        FilePath,
     },
 
     inject: ['report', 'solutions'],
