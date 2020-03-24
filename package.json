@@ -16,7 +16,8 @@
         "dev": "webpack --mode development --watch",
         "watch": "webpack --mode development --watch",
         "build": "NODE_ENV=production webpack --mode production",
-        "format": "prettier --write 'resources/**/*.{css,js,ts,vue}'"
+        "format": "prettier --write 'resources/**/*.{css,js,ts,vue}'",
+        "prepublishOnly": "yarn build"
     },
     "dependencies": {
         "git-url-parse": "^11.1.2",
