@@ -22,9 +22,5 @@ export default {
     components: { DefinitionListRow, DefinitionList },
 
     props: ['event'],
-
-    mounted() {
-        console.log(this.event);
-    },
 };
 </script>
