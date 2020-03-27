@@ -1,10 +1,16 @@
 <template>
     <span class="ui-exception-class">
         <!-- Keep tags tight to prevent whitespace between segments -->
-        <span v-for="(segment, index) in segments" :key="index" class="opacity-75"
-            >{{ segment }}\<wbr /></span
-        ><span>{{ segmentsClass }}</span
-        ><span v-if="method" class="opacity-75">::{{ method }}</span>
+        <span v-for="(segment, index) in segments" :key="index" class="opacity-75">
+            {{ segment }}\<wbr />
+        </span>
+        <span v-if="segmentsClass"
+            >{{ segmentsClass }}
+            <template v-if="segmentsClass && method"
+                >::</template
+            >
+        </span>
+        <span v-if="method" class="opacity-75">{{ method }}</span>
     </span>
 </template>
 
