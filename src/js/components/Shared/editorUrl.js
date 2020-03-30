@@ -27,8 +27,6 @@ export default function editorUrl(config, file, lineNumber) {
         return null;
     }
 
-    console.log(config, file, lineNumber);
-
     return editors[editor]
         .replace('%path', encodeURIComponent(file))
         .replace('%line', encodeURIComponent(lineNumber));
