@@ -17,6 +17,8 @@ export default function editorUrl(config, file, lineNumber) {
             ? file.replace(config.remoteSitesPath, config.localSitesPath)
             : file;
 
+    file = (config.applicationPath || false).length > 0 ? config.applicationPath + file : file;
+
     if (!Object.keys(editors).includes(editor)) {
         console.error(
             `'${editor}' is not supported. Support editors are: ${Object.keys(editors).join(', ')}`,
@@ -24,6 +26,8 @@ export default function editorUrl(config, file, lineNumber) {
 
         return null;
     }
+
+    console.log(config, file, lineNumber);
 
     return editors[editor]
         .replace('%path', encodeURIComponent(file))
