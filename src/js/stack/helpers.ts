@@ -8,7 +8,10 @@ export function addFrameNumbers(frames: Array<Frame>): Array<Frame & { frame_num
 }
 
 export function getFrameType(frame: Frame): FrameType {
-    if (frame.relative_file.startsWith('vendor/')) {
+    if (
+        frame.relative_file.startsWith('vendor/') ||
+        frame.relative_file.startsWith('/node_modules/')
+    ) {
         return 'vendor';
     }
 
